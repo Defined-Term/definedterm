@@ -1,4 +1,4 @@
-prod
+definedterm
 ====
 
-Master branch for live site.
+Master branch for Defined Term git workflow.
