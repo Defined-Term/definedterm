@@ -732,7 +732,7 @@ h1#page-title {
 .definition-source-wrapper .label-above {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 22px;
   text-transform: uppercase;
   color: #252525;
   padding-bottom: 5px;
@@ -864,7 +864,7 @@ h1#page-title {
 }
 
 .field-type-taxonomy-term-reference {
-  margin: 0 0 1.2em;
+  margin: 0 0 1.75em;
 }
 .field-type-taxonomy-term-reference .field-label {
   font-weight: normal;
