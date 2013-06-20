@@ -1,9 +1,98 @@
 
+/* ---------- Additional Fonts ---------- */
+
+@font-face {
+  font-family: "Cabin";
+  font-weight: normal;
+  src: url(../fonts/Cabin-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Cantarell";
+  font-weight: normal;
+  src: url(../fonts/Cantarell-Regular.ttf);
+}
+
+@font-face {
+  font-family: "CODE";
+  font-weight: normal;
+  src: url(../fonts/CODE-Bold.otf);
+}
+
+@font-face {
+  font-family: "Futura Lt BT";
+  font-weight: normal;
+  src: url(../fonts/Futura-Lt-BT-Light.ttf);
+}
+
+@font-face {
+  font-family: "Gill Sans MT Pro";
+  font-weight: 300;
+  src: url(../fonts/GillSansMTPro-Light.otf);
+}
+
+@font-face {
+  font-family: "Gill Sans MT Pro";
+  font-weight: 400;
+  src: url(../fonts/GillSansMTPro-Book.otf);
+}
+
+@font-face {
+  font-family: "Gill Sans MT Pro";
+  font-weight: 500;
+  src: url(../fonts/GillSansMTPro-Medium.otf);
+}
+
+@font-face {
+  font-family: "Gill Sans MT Pro";
+  font-weight: 700;
+  src: url(../fonts/GillSansMTPro-Bold.otf);
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 100;
+  src: url(../fonts/Gotham-Thin.otf);
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 200;
+  src: url(../fonts/Gotham-XLight.otf);
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 300;
+  src: url(../fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 400;
+  src: url(../fonts/Gotham-Book.otf);
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 500;
+  src: url(../fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 700;
+  src: url(../fonts/Gotham-Bold.otf);
+}
+
+
+
+
 /* ---------- Overall Specifications ---------- */
 
 body {
-  line-height: 1.5;
-  font-size: 87.5%;
+  line-height: 1.45;
+  font-size: 17px;
   word-wrap: break-word;
   margin: 0;
   padding: 0;
@@ -49,9 +138,8 @@ img {
 }
 
 #logo img {
-  width: 60px;
-  height: 60px;
-  padding-top: 20px;
+  width: 56px;
+  height: 56px;
 }
 code,
 pre,
@@ -126,12 +214,27 @@ div.meta,
 p.comment-time,
 table,
 .breadcrumb {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans MT Pro", Helvetica, Arial, sans-serif;
 }
 
 ul.links {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 400;
 }
+
+ul#main-menu-links.links {
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 400;
+}
+
+ul#secondary-menu-links.links {
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
 input,
 textarea,
 select,
@@ -319,26 +422,25 @@ ul.tips {
 }
 #logo {
   float: left; /* LTR */
-  padding: 15px 15px 15px 10px; /* LTR */
+  padding: 25px 10px 0px 15px; /* LTR */
 }
 #name-and-slogan {
-  font-family: "Gill Sans", sans-serif;
+   /* LTR */
+}
+#site-name {
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   float: left; /* LTR */
-  padding-top: 50px;
-  margin: 0 0 30px 15px; /* LTR */
-}
-#site-name {
-  font-size: 2em;
+  margin: 40px 0px 0px 10px;
+  font-size: 38px;
   color: #686868;
   line-height: 1;
 }
 h1#site-name {
-  margin: 0;
 }
 #site-name a {
-  font-weight: normal;
 }
 #site-slogan {
   font-size: 0.929em;
@@ -489,9 +591,9 @@ h1#site-name {
   padding-top: 20px;
 }
 #main-menu-links {
-  font-size: 0.929em;
+  font-size: 15px;
   margin: 0;
-  padding: 0 25px;
+  padding: 0 15px;
 }
 #main-menu-links li {
   float: left; /* LTR */
@@ -500,15 +602,14 @@ h1#site-name {
   margin: 0 1px;
 }
 #main-menu-links a {
-  color: #333;
+  color: #000000;
   background: #ccc;
   background: rgba(255, 255, 255, 0.7);
   float: left; /* LTR */
   height: 2.2em;
-  line-height: 2.3em;
+  line-height: 2.7em;
   padding: 0 0.7em;
   text-decoration: none;
-  text-shadow: 0 1px #eee;
   -khtml-border-radius-topleft: 8px;
   -khtml-border-radius-topright: 8px;
   -moz-border-radius-topleft: 8px;
@@ -541,7 +642,7 @@ h1#site-name {
 #secondary-menu-links {
   float: right; /* LTR */
   font-size: 0.929em;
-  margin: 10px 10px 0;
+  margin: 15px 10px 0;
 }
 #secondary-menu-links a:hover,
 #secondary-menu-links a:focus {
@@ -599,19 +700,125 @@ h1#site-name {
   margin-top: 10px;
 }
 h1#page-title {
-  font-size: 2em;
+  font-size: 32px;
   line-height: 1;
 }
 #content h2 {
+  color: #000000;
   margin-bottom: 2px;
   font-size: 1.429em;
   line-height: 1.4;
 }
+
+#content .definition-source-wrapper h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+#content .definition-source-wrapper h2.definition-teaser-title {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.field.field-label-above .field-label {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #252525;
+  padding-bottom: 5px;
+}
+
+.definition-source-wrapper .label-above {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #252525;
+  padding-bottom: 5px;
+}
+
+.field.field-label-inline .field-label {
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-right: 5px;
+  color: #252525;
+  display: inline;
+}
+
+.definition-source-wrapper .field span, .definition-source-wrapper .field a, .definition-source-wrapper .field .node-person a {
+  line-height: 1em;
+  vertical-align: text-top;
+  float: none;
+  display: inline;
+}
+
+.document-credit-wrapper .label-inline {
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-right: 5px;
+  color: #252525;
+  float:left;
+}
+
+.document-credit-wrapper a {
+  line-height: 1em;
+  vertical-align: text-top;
+  float: l;
+  display: inline;
+}
+
+.person-sec-wrapper .label-inline {
+  font-family: "Gill Sans MT Pro", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-right: 5px;
+  color: #252525;
+  float:left;
+}
+
+.person-sec-wrapper a {
+  line-height: 1em;
+  vertical-align: text-top;
+  float: l;
+  display: inline;
+}
+
+#content .document-credit-wrapper h2 {
+  font-size: 17px;
+  margin: 0;
+  display: inline;
+}
+
+.definition-source-wrapper .node-person a.contextual-links-trigger, .document-credit-wrapper .node-person a.contextual-links-trigger {
+  display: none;
+}
+
+.definition-source-wrapper .field-name-field-document-link a:link, .definition-source-wrapper .field-name-field-document-link a:active, .definition-source-wrapper .field-name-field-document-link a:visited {
+  color: #3b3b3b;
+}
+
+.definition-source-wrapper .field-name-field-document-link a:hover{
+  color: #008ee2;
+}
+
+.field-name-field-credits a:link, .field-name-field-credits a:active, .field-name-field-credits a:visited {
+  color: #3b3b3b;
+}
+
+.field-name-field-credits a:hover{
+  color: #008ee2;
+}
+
 .node .content {
-  font-size: 1.071em;
+  font-size: 17px;
 }
 .node-teaser .content {
-  font-size: 1em;
 }
 .node-teaser h2 {
   margin-top: 0;
@@ -655,6 +862,7 @@ h1#page-title {
   height: 20px;
   margin: 1px 5px 0 0; /* LTR */
 }
+
 .field-type-taxonomy-term-reference {
   margin: 0 0 1.2em;
 }
@@ -665,11 +873,11 @@ h1#page-title {
 }
 .field-type-taxonomy-term-reference .field-label,
 .field-type-taxonomy-term-reference ul.links {
-  font-size: 0.8em;
+  font-size: 15px;
 }
 .node-teaser .field-type-taxonomy-term-reference .field-label,
 .node-teaser .field-type-taxonomy-term-reference ul.links {
-  font-size: 0.821em;
+  font-size: 15px;
 }
 .field-type-taxonomy-term-reference ul.links {
   padding: 0;
