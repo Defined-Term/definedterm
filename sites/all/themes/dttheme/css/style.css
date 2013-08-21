@@ -652,7 +652,7 @@ h1#site-name {
 /* ------------------- Main ------------------- */
 
 #main {
-  margin-top: 20px;
+  margin-top: 35px;
   margin-bottom: 40px;
 }
 
@@ -701,8 +701,27 @@ h1#site-name {
 }
 h1#page-title {
   font-size: 32px;
-  line-height: 1;
+  line-height: 1em;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 20px;
 }
+
+h1.definition-teaser-title {
+  font-size: 28px;
+  line-height: 1em;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+h1.definition-teaser-title a:link, h1.definition-teaser-title a:active, h1.definition-teaser-title a:visited {
+  color: #3b3b3b;
+}
+
+h1.definition-teaser-title a:hover{
+  color: #008ee2;
+}
+
 #content h2 {
   color: #000000;
   margin-bottom: 2px;
@@ -713,11 +732,26 @@ h1#page-title {
 #content .definition-source-wrapper h2 {
   font-size: 17px;
   margin: 0;
+  padding-top: 0;
+}
+
+#content .node-definition.view-mode-teaser .definition-source-wrapper h2.definition-teaser-title {
+  font-size: 17px;
+  margin: 7px 0 5px;
 }
 
 #content .definition-source-wrapper h2.definition-teaser-title {
   font-size: 20px;
   margin: 5px 0;
+}
+
+.node-definition.view-mode-teaser .field.field-label-above .field-label {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #252525;
+  padding-bottom: 5px;
 }
 
 .field.field-label-above .field-label {
@@ -727,6 +761,22 @@ h1#page-title {
   text-transform: uppercase;
   color: #252525;
   padding-bottom: 5px;
+}
+
+.node-definition.view-mode-teaser .field-type-text-with-summary p {
+  margin-bottom: 0.9em;
+}
+
+.node-definition.view-mode-full .field-type-text-with-summary p {
+  margin-bottom: 1.0em;
+}
+
+.node-definition.view-mode-teaser .definition-source-wrapper .label-above {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #252525;
 }
 
 .definition-source-wrapper .label-above {
@@ -824,6 +874,7 @@ h1#page-title {
   margin-top: 0;
   padding-top: 0.5em;
 }
+/*
 .node-teaser h2 a:link, .node-teaser h2 a:active, .node-teaser h2 a:visited {
   color: #181818;
 }
@@ -831,7 +882,7 @@ h1#page-title {
 .node-teaser h2 a:hover, .node-teaser h2 a:focus {
   color: #008ee2;
 }
-
+*/
 .node-teaser {
   border-bottom: 1px solid #d3d7d9;
   margin-bottom: 30px;
@@ -863,8 +914,12 @@ h1#page-title {
   margin: 1px 5px 0 0; /* LTR */
 }
 
+.node-definition.view-mode-teaser .field-type-taxonomy-term-reference {
+  margin: 0 0 1.35em;
+}
+
 .field-type-taxonomy-term-reference {
-  margin: 0 0 1.75em;
+  margin: 0 0 1.6em;
 }
 .field-type-taxonomy-term-reference .field-label {
   font-weight: normal;
@@ -990,7 +1045,7 @@ ul.links {
 
 /* ------------------ Sidebar ----------------- */
 .sidebar .section {
-  padding-top: 10px;
+  padding-top: 4px;
 }
 .sidebar .block {
   border: 1px solid;
@@ -1254,7 +1309,6 @@ ul.links {
 
 .tabs {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
 }
 .tabs ul.primary {
   padding: 0 3px;
