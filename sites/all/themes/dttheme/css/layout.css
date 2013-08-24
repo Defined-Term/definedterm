@@ -26,20 +26,22 @@ body,
 }
 .region-header {
   float: right; /* LTR */
-  margin: 0 5px 10px;
+  margin: 0;
 }
 .with-secondary-menu .region-header {
-  margin-top: 37px;
+  margin-top: 25px;
 }
 .without-secondary-menu .region-header {
   margin-top: 37px;
 }
+/*
 #secondary-menu {
   position: absolute;
-  right: 0; /* LTR */
+  right: 0;
   top: 0;
   width: 480px;
 }
+*/
 #content,
 #sidebar-first,
 #sidebar-second,
@@ -85,7 +87,7 @@ body,
   width: 280px;
 }
 #footer-wrapper {
-  padding: 35px 5px 30px;
+  padding-bottom: 35px;
 }
 .region-footer-firstcolumn,
 .region-footer-secondcolumn,
