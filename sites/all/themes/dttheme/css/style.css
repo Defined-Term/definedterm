@@ -799,6 +799,10 @@ h1.definition-teaser-title a:hover{
   margin: 5px 0;
 }
 
+#content .view-mode-full .definition-source-wrapper h2.definition-teaser-title {
+  margin: 0 0 2px;
+}
+
 #content .definition-source-wrapper .label-inline {
   font-family: "Proxima Nova", sans-serif;
   font-weight: 700;
@@ -866,7 +870,12 @@ h1.definition-teaser-title a:hover{
 }
 
 .view-mode-full .entity-info {
+  width: 100%;
   display: inline-block;
+}
+
+.entity-info {
+  padding-top: 1px;
 }
 
 .entity-info .date-display-single {
@@ -878,6 +887,14 @@ h1.definition-teaser-title a:hover{
 
 .entity-info a {
   font-size: 14px;
+}
+
+.entity-field-wrapper {
+  padding-top: 4px;
+}
+
+.entity-items {
+  padding-top: 4px;
 }
 
 .definition-tag  a {
