@@ -110,7 +110,7 @@ body.overlay {
 }
 
 a:link,
-a:active
+a:active,
 a:visited {
   color: #32cc82;
   text-decoration: none;
@@ -120,6 +120,15 @@ a:hover {
   color: #259b65;
   text-decoration: none;
 }
+
+.page-d a:link, .page-d a:active, .page-d a:visited {
+  color: #181818;
+}
+
+.page-d a:hover {
+  color: #32cc82;
+}
+
 h1,
 h2,
 h3,
@@ -775,10 +784,17 @@ h1#site-name {
 h1#page-title {
   font-family: "Helvetica Neue LT Pro", sans-serif;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1em;
-  margin-top: 0;
+  margin: 0 0 25px;
+  padding: 5px 45px 10px 0px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.node-type-definition h1#page-title {
+  font-size: 32px;
   padding: 45px 45px 20px 45px;
+  border-bottom: none;
 }
 
 h1.definition-teaser-title {
@@ -819,11 +835,16 @@ h1.definition-teaser-title a:hover{
   -webkit-font-smoothing: antialiased;
   padding-bottom: 1px;
   padding-left: 30px;
+  line-height: 1.95;
 }
 
 #content .definition-source-wrapper h2.definition-teaser-title {
   font-size: 14px;
   margin: 5px 0;
+}
+
+#content .definition-source-wrapper h2.definition-teaser-title a {
+  padding-left: 20px;
 }
 
 #content .view-mode-full .definition-source-wrapper h2.definition-teaser-title {
@@ -840,16 +861,23 @@ h1.definition-teaser-title a:hover{
   float: left;
   padding-top: 4px;
   line-height: 1.8em;
-  padding-right: 30px;
+}
+
+#content .field-label-tags .label-inline {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  float: left;
+  padding-top: 2px;
+  line-height: 1.8em;
 }
 
 .definition-source-wrapper .node-person a {
-  padding-left: 86px;
+  padding-left: 27px;
   
-}
-
-.entity-items {
-  float: left;
 }
 
 #content .definition-source-wrapper .entity-info .label-inline {
@@ -859,8 +887,8 @@ h1.definition-teaser-title a:hover{
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #8e8e8e;
-  line-height: 2em;
   padding-top: 5px;
+  padding-right: 0px;
 }
 
 .node-definition.view-mode-teaser .field-label-above .label-above {
@@ -878,7 +906,13 @@ h1.definition-teaser-title a:hover{
 }
 
 .field-label-tags {
+  padding: 0px 45px 45px;
   overflow: auto;
+  /* border-top: 1px solid #dfdfdf; */
+}
+
+.definition-tag-wrapper {
+  padding-left: 70px;
 }
 
 .view-mode-full .field-label-tags {
@@ -897,31 +931,44 @@ h1.definition-teaser-title a:hover{
 }
 
 .view-mode-full .entity-info {
-  width: 100%;
-  display: inline-block;
 }
 
 .entity-info {
+  width: 100%;
+  display: inline-block;
   padding-top: 1px;
+  padding-bottom: 5px;
 }
 
 .entity-info .date-display-single {
   font-size: 14px;
   color: #181818;
-  line-height: 1em;
-  padding-left: 18px;
+  line-height: 2em;
+  padding-left: 40px;
 }
 
 .entity-info a {
   font-size: 14px;
+  padding-left: 75px;
+}
+
+.entity-info .file {
+  padding-left: 45px;
+}
+
+.entity-info .file a {
+  padding-left: 0px;
 }
 
 .entity-field-wrapper {
-  padding-top: 4px;
 }
 
 .entity-items {
   padding-top: 4px;
+}
+
+.entity-item {
+  float: left;
 }
 
 .definition-tag  a {
@@ -1000,7 +1047,6 @@ h1.definition-teaser-title a:hover{
 .document-credit-wrapper a {
   line-height: 1em;
   vertical-align: text-top;
-  float: l;
   display: inline;
 }
 
@@ -1017,7 +1063,6 @@ h1.definition-teaser-title a:hover{
 .person-sec-wrapper a {
   line-height: 1em;
   vertical-align: text-top;
-  float: l;
   display: inline;
 }
 
@@ -1135,13 +1180,12 @@ h1.definition-teaser-title a:hover{
 }
 
 .definition-top-interior-wrapper {
-  padding: 45px;
+  padding: 45px 45px 35px;
 }
 
 .definition-source-wrapper {
   border-top: 1px solid #dfdfdf;
-  background-color: #f5f5f5;
-  padding: 40px 45px;
+  padding: 35px 45px 7px;
   margin: 0;
 }
 
@@ -1860,7 +1904,7 @@ select.form-select {
   border: 1px solid #ccc;
 }
 input.form-submit:hover {
-  background: #dedede;
+  cursor: pointer;
 }
 .password-suggestions ul li {
   margin-left: 1.2em; /* LTR */
@@ -2095,7 +2139,9 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
   background: url(../images/search-button.png) 0 0 no-repeat;
 }
 #search-block-form input.form-submit:hover,
-#search-form input.form-submit:hover {
+#search-block-form input.form-submit:focus,
+#search-form input.form-submit:hover,
+#search-form input.form-submit:focus {
   background-position: 0 -35px;
 }
 #search-form .form-item-keys label {
