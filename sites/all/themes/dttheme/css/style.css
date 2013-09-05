@@ -109,14 +109,12 @@ body.overlay {
   background-color: #f9f9f9;
 }
 
-a:link,
-a:active,
-a:visited {
+a:link, a:active, a:visited, .page-d .alpha-view a:link, .page-d .alpha-view a:active, .page-d .alpha-view a:visited {
   color: #32cc82;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
 }
-a:hover {
+a:hover, .page-d .alpha-view a:hover {
   color: #259b65;
   text-decoration: none;
 }
@@ -971,6 +969,10 @@ h1.definition-teaser-title a:hover{
   float: left;
 }
 
+.context-styling p {
+  font-style: italic;
+}
+
 .definition-tag  a {
 	display: inline-block;
 	float: left;
@@ -985,6 +987,16 @@ h1.definition-teaser-title a:hover{
 }
 
 .definition-tag  a:hover {
+	color: #FFF;
+	background-color: #777;
+}
+
+.page-d .alpha-view .definition-tag  a {
+	color: #777;
+	background-color: #EDEDED;
+}
+
+.page-d .alpha-view .definition-tag  a:hover {
 	color: #FFF;
 	background-color: #777;
 }
